@@ -5,15 +5,60 @@
   TBD-step-3-notes.
 -->
 
-## Step 3: TBD-step-3-name
+## Paso 03: Agregar Pruebas
 
-_Nice work finishing TBD-step-2-name :sparkles:_
+_Ahora, probemos el código común. Una parte esencial será un conjunto de fuentes para pruebas comunes, que tiene la biblioteca de la API kotlin.test como dependencia._
 
-TBD-step-3-information
+### :keyboard: Actividad: Paso 03
 
-**What is _TBD-term-3_**: TBD-definition-3
+1. En el directorio compartido, abre el archivo `build.gradle.kts`. Agrega un conjunto de fuentes para probar el código común con una dependencia en la biblioteca `kotlin.test`:
+    ```gradle
+    sourceSets {
+      //...
+      commonTest.dependencies {
+        implementation(libs.kotlin.test)
+      }
+    }
+    ```
+1. Una vez que se haya agregado la dependencia, se te pedirá que resincronices el proyecto. Haz clic en Sync Now para sincronizar los archivos de Gradle.
+1. El conjunto de fuentes commonTest almacena todas las pruebas comunes. Ahora también necesitas crear un directorio con el mismo nombre en tu proyecto:
+    1. Haz clic derecho en el directorio commonMain/src y selecciona **New | Directory**. El IDE presentará una lista de opciones.
+    1. Comienza a escribir la ruta commonTest/kotlin para reducir la selección, luego elígela de la lista.
+    1. En el directorio `commonTest/kotlin`, crea un nuevo paquete `common.example.search`.
+    1. En este paquete, crea el archivo Grep.kt y actualízalo con la siguiente prueba unitaria:
+          ```kotlin
+          import kotlin.test.Test
+          import kotlin.test.assertContains
+          import kotlin.test.assertEquals
 
-### :keyboard: Activity: TBD-step-3-name
+          class GrepTest {
+            companion object {
+              val sampleData = listOf(
+                "123 abc",
+                "abc 123",
+                "123 ABC",
+                "ABC 123"
+              )
+            }
 
-1. TBD-step-3-instructions.
-1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
+            @Test
+            fun shouldFindMatches() {
+              val resultados = mutableListOf<String>()
+              grep(sampleData, "[a-z]+") {
+                resultados.add(it)
+              }
+
+              assertEquals(2, resultados.size)
+              for (resultado in resultados) {
+                assertContains(resultado, "abc")
+              }
+            }
+          }
+          ```
+          Como puedes ver, las anotaciones y afirmaciones importadas no son específicas de la plataforma ni del marco. Cuando ejecutes esta prueba más tarde, un marco específico de la plataforma proporcionará el ejecutor de pruebas.
+1. Ejecuta las pruebas: Puedes ejecutar la prueba ejecutando:
+    - La función de prueba `shouldFindMatches()` usando el ícono Run en el margen.
+    - El archivo de prueba usando su menú contextual.
+    - La clase de prueba `GrepTest` usando el ícono **Run** en el margen.
+1. Sube los cambios haciendo un commit de los archivos y push a la rama main.
+1. Espera unos 20 segundos y luego actualiza esta página (la que estás siguiendo las instrucciones). [GitHub Actions](https://docs.github.com/en/actions) se actualizará automáticamente al siguiente paso.
