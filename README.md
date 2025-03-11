@@ -25,16 +25,16 @@ _Este repositorio nos ayudará a introducir el concepto de Mobile testing_
 
 <!-- For start course, run in JavaScript:
 'https://github.com/new?' + new URLSearchParams({
-  template_owner: 'BISOFT-38-organization',
-  template_name: 'BISOFT-38-course-name',
+  template_owner: 'kevinah95',
+  template_name: 'delete-template',
   owner: '@me',
-  name: 'BISOFT-38-organization-BISOFT-38-course-name',
-  description: 'My clone repository',
+  name: 'BISOFT-38-proyecto-04-actividad-02',
+  description: 'Actividad para Mobile Testing',
   visibility: 'public',
 }).toString()
 -->
 
-[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](BISOFT-38-generate)
+[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=kevinah95&template_name=delete-template&owner=%40me&name=BISOFT-38-proyecto-04-actividad-02&description=Actividad+para+Mobile+Testing&visibility=public)
 
 1. Haz clic derecho en **Start course** y abre el enlace en una nueva pestaña.
 2. En la nueva pestaña, la mayoría de los campos se completarán automáticamente.
