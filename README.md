@@ -9,7 +9,7 @@
   Add your open source license, GitHub uses the MIT license.
 -->
 
-# BISOFT-38 Proyecto de Ingeniería del Software 4
+# SOFT-621 Mobile Testing
 
 _Este repositorio nos ayudará a introducir el concepto de Mobile testing_
 
@@ -34,7 +34,7 @@ _Este repositorio nos ayudará a introducir el concepto de Mobile testing_
 }).toString()
 -->
 
-[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=kevinah95&template_name=bisoft-38-actividad-testing&owner=%40me&name=BISOFT-38-proyecto-04-actividad-02&description=Actividad+para+Mobile+Testing&visibility=public)
+[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=kevinah95&template_name=soft-621-test-activity&owner=%40me&name=soft-621-test-activity&description=Actividad+para+Mobile+Testing&visibility=public)
 
 1. Haz clic derecho en **Start course** y abre el enlace en una nueva pestaña.
 2. En la nueva pestaña, la mayoría de los campos se completarán automáticamente.
