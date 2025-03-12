@@ -5,13 +5,13 @@
   TBD-step-5-notes.
 -->
 
-## Step 5: TBD-step-5-name
+## Paso 05: Excelente trabajo
 
-_Almost there TBD-step-4-name! :heart:_
+_Excelente trabajo para finalizar vamos a reflexionar sobre lo aprendido_
 
-TBD-step-5-information
+1. Escribe un archivo .txt sobre:
+    - ¿Qué aprendí?
+    - ¿Qué valor tienen las pruebas en el ámbito profesional?
 
-### :keyboard: Activity: TBD-step-5-name
-
-1. TBD-step-5-instructions.
-1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
+1. Sube los cambios haciendo un commit de los archivos y push a la rama main.
+1. Espera unos 20 segundos y luego actualiza esta página (la que estás siguiendo las instrucciones). [GitHub Actions](https://docs.github.com/en/actions) se actualizará automáticamente al siguiente paso.
